@@ -2,11 +2,11 @@ import React from "react";
 
 function Navigation() {
   return (
-    <div className="navigation">
-      <ul>
-        <li className="me-5">Courses</li>
-        <li className="me-5">Blog</li>
-        <li className="me-5">Contact</li>
+    <div className="navigation ">
+      <ul className="d-flex justify-content-evenly">
+        <li>Courses</li>
+        <li>Blog</li>
+        <li>Contact</li>
       </ul>
     </div>
   );

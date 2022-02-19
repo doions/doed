@@ -1,11 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import imgone from "../image/IMG-1.png";
 function HeroImage() {
-    return (
-        <div>
-            <img src=""></img>
-        </div>
-    )
+  return (
+    <div>
+      <img src={imgone} alt="img" className="img-fluid" />
+    </div>
+  );
 }
 
-export default HeroImage
+export default HeroImage;

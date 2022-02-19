@@ -2,7 +2,12 @@ import React from "react";
 
 function CalltoAction() {
   return (
-    <div>Call to action. we need to two buttons here from the Bootstrap</div>
+    <div className="py-5">
+      <button className="bg-danger text-white p-2 px-5 me-2 btn-lg">
+        Apply now
+      </button>
+      <button className="bg-white p-2 px-5 btn-lg">Know more</button>
+    </div>
   );
 }
 

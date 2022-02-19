@@ -2,7 +2,12 @@
   list-style: none;
   display: flex;
 }
-/* .logo {
-  height: 200px;
-  width: 200px;
-} */
+@font-face {
+  font-family: "Light"; /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./Fonts/menlo-cufonfonts/Menlo-Regular.ttf") format("truetype");
+}
+.container {
+  font-family: "MENLO FONT";
+  font-size: large;
+}

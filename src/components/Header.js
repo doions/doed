@@ -5,12 +5,12 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function Header() {
   return (
-    <Container fluid>
+    <Container>
       <Row className="d-flex align-items-center logo ">
-        <Col>
+        <Col md={4}>
           <Logo />
         </Col>
-        <Col>
+        <Col md={8}>
           <Navigation />
         </Col>
       </Row>
