@@ -1,20 +1,28 @@
 import React from "react";
 import Logo from "./Logo";
 import Navigation from "./Navigation";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Navbar } from "react-bootstrap";
+import { Outlet } from "react-router-dom";
 
 function Header() {
   return (
-    <Container>
-      <Row className="d-flex align-items-center logo ">
-        <Col md={4}>
-          <Logo />
-        </Col>
-        <Col md={8}>
-          <Navigation />
-        </Col>
-      </Row>
-    </Container>
+    <>
+      <Navbar expand="lg" bg="white" variant="light">
+        <Container>
+          <Navbar.Brand href="#home">
+            <Logo />
+          </Navbar.Brand>
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            className="tog"
+          />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Navigation />
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      <Outlet />
+    </>
   );
 }
 

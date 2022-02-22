@@ -5,7 +5,8 @@ function BrandMessage() {
     <div>
       <h1 className="fw-bold">
         Learn to <span className="text-danger">CODE</span> <br />
-        Change your life.
+        Change your life
+        <span className="text-danger ">.</span>
       </h1>
       <p className="pt-5">
         We believe that coding is for everyone.
