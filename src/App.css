@@ -9,4 +9,8 @@
 }
 .container {
   font-family: "Menlo Font";
+  font-size: 20px;
+}
+.ftr {
+  background-color: #f5b4b1;
 }

@@ -1,12 +1,43 @@
 import React from "react";
+import { Modal, Button } from "react-bootstrap";
+import FromTwo from "./FromTwo";
 
-function CalltoAction() {
+function MyVerticallyCenteredModal(props) {
   return (
-    <div className="py-5">
-      <button className="bg-danger border-danger text-white p-2  me-2 m-3 btn-lg fw-bold">
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter"></Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <FromTwo />
+      </Modal.Body>
+      {/* <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer> */}
+    </Modal>
+  );
+}
+function CalltoAction() {
+  const [modalShow, setModalShow] = React.useState(false);
+  return (
+    <div className="py-sm-0 py-md-5">
+      <button
+        onClick={() => setModalShow(true)}
+        className="p-3  me-2 m-3 fw-bold"
+        style={{ background: "#E63732", color: "#fff", border: "none" }}
+      >
         Apply now
       </button>
-      <button className="bg-white p-2  btn-lg m-3 fw-bold">Know more</button>
+
+      <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
     </div>
   );
 }

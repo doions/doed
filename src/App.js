@@ -8,6 +8,7 @@ import "./Fonts/menlo-cufonfonts/Menlo-Regular.ttf";
 import Homepage from "./components/Homepage/Homepage";
 import Header from "./components/Header";
 import NoPage from "./components/ContentPage/NoPage";
+import SecFour from "./components/Homepage/SecFour";
 function App() {
   return (
     <BrowserRouter>
@@ -15,7 +16,7 @@ function App() {
         <Route path="/" element={<Header />}>
           <Route index element={<Homepage />} />
           <Route path="/WhatWeDo" element={<WhatWeDo />} />
-          <Route path="/HowCanYGS" element={<HowCanYGS />} />
+          <Route path="/SecFour" element={<SecFour />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

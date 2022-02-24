@@ -3,6 +3,7 @@ import BrandMessage from "./BrandMessage";
 import HeroImage from "./HeroImage";
 import CalltoAction from "./CalltoAction";
 import { Container, Row, Col } from "react-bootstrap";
+import KnowMore from "./KnowMore";
 
 function Hero() {
   return (
@@ -11,7 +12,14 @@ function Hero() {
         <Row>
           <Col sm={12} md={6}>
             <BrandMessage />
-            <CalltoAction />
+            <Row className="d-flex justify-content-center">
+              <Col sm={6} md={4}>
+                <CalltoAction />
+              </Col>
+              <Col sm={6} md={4}>
+                <KnowMore />
+              </Col>
+            </Row>
           </Col>
           <Col sm={12} md={6}>
             <HeroImage />

@@ -1,18 +1,23 @@
 import React from "react";
-import Header from "../Header";
 import Hero from "../Hero";
-import WhoWeAre from "../ContentPage/WhoWeAre";
-import OurPhilosophy from "../ContentPage/OurPhilosophy";
-import WhatWeDo from "../ContentPage/WhatWeDo";
-import HowCanYGS from "../ContentPage/HowCanYGS";
+
+import SectionTwo from "./SectionTwo";
+import SectionThree from "./SectionThree";
+import SecFour from "./SecFour";
+import Footer from "../Footer";
+import CoursesSection from "../Courses/CoursesSection";
+import ContactUs from "./ContactUs";
+
 function Homepage() {
   return (
     <div>
       <Hero />
-      <WhoWeAre />
-      <OurPhilosophy />
-      <WhatWeDo />
-      <HowCanYGS />
+      <SectionTwo />
+      <SectionThree />
+      <SecFour />
+      <CoursesSection />
+      <ContactUs />
+      <Footer />
     </div>
   );
 }

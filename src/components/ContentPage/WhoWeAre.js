@@ -2,8 +2,8 @@ import React from "react";
 import { Container } from "react-bootstrap";
 function WhoWeAre() {
   return (
-    <Container className="py-5">
-      <h1>Who we are?</h1>
+    <Container className="">
+      <h1 className="fw-bold">Who we are?</h1>
       <p>
         We are a team of young professionals with a solid experience in the
         software development. We love to code and We love helping others to grow

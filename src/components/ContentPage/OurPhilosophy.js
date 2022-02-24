@@ -2,9 +2,9 @@ import React from "react";
 import { Container } from "react-bootstrap";
 function OurPhilosophy() {
   return (
-    <Container className="py-5">
-      <h1>Our Philosophy</h1>
-      <h5 className="fw-bold">
+    <Container className="">
+      <h1 className="fw-bold py-2">Our Philosophy</h1>
+      <h5 className="fw-bold py-2">
         “Learning is not the product of teaching. Learning is the
         <br /> product of activity of learners.” - John Hol
       </h5>
