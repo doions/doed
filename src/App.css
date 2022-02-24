@@ -14,3 +14,8 @@
 .ftr {
   background-color: #f5b4b1;
 }
+.navStyle:hover {
+  /* border-bottom: #e63732 1px solid; */
+  text-decoration: underline;
+  text-decoration-color: #e63732;
+}

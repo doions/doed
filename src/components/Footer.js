@@ -1,4 +1,6 @@
 import React from "react";
+
+import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 import { Container, Row, Col } from "react-bootstrap";
 function Footer() {
   return (
@@ -17,9 +19,9 @@ function Footer() {
             482001{" "}
           </p>
         </Col>
-        <Col>
-          <span>insta</span>
-          <span>Facebook</span>
+        <Col className="d-flex align-items-center  justify-content-evenly">
+          <AiFillFacebook size={70} />
+          <AiFillInstagram size={70} />
         </Col>
       </Row>
     </Container>
