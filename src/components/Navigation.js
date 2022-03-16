@@ -6,13 +6,13 @@ function Navigation() {
   return (
     <>
       <Nav className="ms-auto">
-        <Link to="/" className="mx-5 nav-link text-dark  navStyle">
+        <Link to="/Courses" className="mx-5 nav-link text-dark  navStyle">
           Courses
         </Link>
-        <Link to="/WhatWeDo" className="mx-5 nav-link text-dark navStyle">
+        <Link to="/Blog" className="mx-5 nav-link text-dark navStyle">
           Blog
         </Link>
-        <Link to="/SecFour" className="mx-5 nav-link text-dark navStyle ">
+        <Link to="/ContactUs" className="mx-5 nav-link text-dark navStyle ">
           Contact
         </Link>
       </Nav>

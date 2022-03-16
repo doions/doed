@@ -9,7 +9,7 @@ function Header() {
     <>
       <Navbar expand="lg" bg="white" variant="light">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <Logo />
           </Navbar.Brand>
           <Navbar.Toggle
