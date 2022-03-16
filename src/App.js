@@ -8,7 +8,7 @@ import Header from "./components/Header";
 import NoPage from "./components/NoPage/index";
 import ContactUs from "./components/ContactUS/index";
 import Footer from "./components/Footer";
-import Courses from "./components/Courses/AllCourses/index";
+import Courses from "./components/Courses/AllCourses/CoursesFullScreen";
 import FullStack from "./components/Courses/FullStackCourse/index";
 import DigitalMarketing from "./components/Courses/DigitalMarketingCourse/index";
 

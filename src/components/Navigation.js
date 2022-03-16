@@ -1,14 +1,16 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import CoursesFullScreen from "./Courses/AllCourses/CoursesFullScreen";
 
 function Navigation() {
   return (
     <>
       <Nav className="ms-auto">
-        <Link to="/Courses" className="mx-5 nav-link text-dark  navStyle">
+        {/* <Link to="/Courses" className="mx-5 nav-link text-dark  navStyle">
           Courses
-        </Link>
+        </Link> */}
+        <CoursesFullScreen />
         <Link to="/Blog" className="mx-5 nav-link text-dark navStyle">
           Blog
         </Link>

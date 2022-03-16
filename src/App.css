@@ -46,3 +46,7 @@ button {
     letter-spacing: 1px;
   }
 }
+.fullScreenHover:hover {
+  text-decoration: underline;
+  text-decoration-color: #e63732;
+}

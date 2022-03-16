@@ -1,14 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Container, Form, Button } from "react-bootstrap";
 import Submit from "../Button/Submit";
 
 function ContactFrom() {
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const message = e.target.message.value;
 
     console.log("email : " + email, "\n", "message : " + message);
+    navigate("/");
   };
   return (
     <>

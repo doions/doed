@@ -3,8 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import SecOneImg from "./SecOneImg";
 import SecOneMH from "./SecOneMH";
 import SecOneMsg from "./SecOneMsg";
-import ApplyNow from "../../../Button/ApplyNow";
 import KnowMore from "../../../Button/KnowMore";
+import ApplyNowDigital from "../../../Button/ApplyNowDigital";
 function SecOne() {
   return (
     <div>
@@ -20,7 +20,7 @@ function SecOne() {
         </Row>
         <Row className="d-flex align-self-start">
           <Col md={2}>
-            <ApplyNow />
+            <ApplyNowDigital />
           </Col>
           <Col md={2}>
             <KnowMore />

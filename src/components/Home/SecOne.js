@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ApplyNow from "../Button/ApplyNow";
+import EnquireNow from "../Button/EnquireNow";
 import KnowMore from "../Button/KnowMore";
 import SecOneHM from "../HomeComponents/SecOneHM";
 import SecOneImg from "../HomeComponents/SecOneImg";
@@ -20,7 +21,7 @@ function SecOne() {
         </Row>
         <Row className="d-flex align-self-start">
           <Col md={2}>
-            <ApplyNow />
+            <EnquireNow />
           </Col>
           <Col md={2}>
             <KnowMore />

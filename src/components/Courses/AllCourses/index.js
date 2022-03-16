@@ -7,7 +7,9 @@ function index() {
   return (
     <div>
       <Container>
-        <h1 className="d-flex justify-content-center py-5 my-5">All Courses</h1>
+        <h1 className="d-flex justify-content-center py-5 mb-5 fw-bold">
+          Courses
+        </h1>
         <Row className="d-flex justify-content-around">
           <Col md={4}>
             <CardOne />

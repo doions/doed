@@ -1,6 +1,6 @@
 import React from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import { Container, Row, Col, FormControl } from "react-bootstrap";
+import { Formik, Form as FormikForm, Field, ErrorMessage } from "formik";
+import { Container, Row, Col, Form, FormControl } from "react-bootstrap";
 import * as yup from "yup";
 
 const validationSchema = yup.object({
@@ -15,35 +15,61 @@ const validationSchema = yup.object({
     .string()
     .required("Email is Required.")
     .email("Email is not Valid."),
+
+  message: yup.string().required("Message is Required"),
 });
-const ApplyFrom = () => (
+const EnquireForm = () => (
   <Container>
     <Row className=" d-flex justify-content-center">
       <Col md={6}>
         <Formik
           validationSchema={validationSchema}
-          initialValues={{ name: "", phone: "", email: "" }}
+          initialValues={{ name: "", phone: "", email: "", message: "" }}
           onSubmit={(values) => {
             console.log(values);
           }}
         >
-          <Form>
-            <label>Name</label>
-            <Field name="name" type="text" as={FormControl} />
+          <FormikForm>
+            <Field
+              name="name"
+              placeholder="Name"
+              type="text"
+              as={FormControl}
+            />
             <ErrorMessage name="name" render={CustomError} />
             <br />
 
-            <label>Phone</label>
-            <Field name="phone" type="text" as={FormControl} />
-            <ErrorMessage name="phone" render={CustomError} />
-            <br />
-
-            <label>Email</label>
-            <Field name="email" type="email" as={FormControl} />
+            <Field
+              name="email"
+              placeholder="E-mail"
+              type="email"
+              as={FormControl}
+            />
             <ErrorMessage name="email" render={CustomError} />
             <br />
 
-            <div role="group" aria-labelledby="my-radio-group">
+            <Field
+              name="phone"
+              placeholder="Mobile no."
+              type="text"
+              as={FormControl}
+            />
+            <ErrorMessage name="phone" render={CustomError} />
+            <br />
+
+            <Field name="message">
+              {({ field, form, meta }) => (
+                <Form.Control
+                  as="textarea"
+                  placeholder="Message"
+                  style={{ height: "100px" }}
+                  {...field}
+                />
+              )}
+            </Field>
+            <ErrorMessage name="message" render={CustomError} />
+
+            {/* <div role="group" aria-labelledby="my-radio-group">
               <label>
                 <Field type="radio" name="picked" value="   Beginner" />
                 Beginner
@@ -58,7 +84,7 @@ const ApplyFrom = () => (
                 <Field type="radio" name="picked" value="Advanced" />
                 Advanced
               </label>
-            </div>
+            </div> */}
 
             <br />
             <div className=" d-flex justify-content-center">
@@ -70,14 +96,14 @@ const ApplyFrom = () => (
                 Submit
               </button>
             </div>
-          </Form>
+          </FormikForm>
         </Formik>
       </Col>
     </Row>
   </Container>
 );
 
-export default ApplyFrom;
+export default EnquireForm;
 
 function CustomError(msg) {
   return <div style={{ color: "red" }}>{msg}</div>;
