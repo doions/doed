@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal } from "react-bootstrap";
+import { Fade, Modal } from "react-bootstrap";
 import Courses from "./AllCourse";
 import closeBtn from "../Image/closeBtn.png";
 
@@ -36,7 +36,7 @@ function CoursesFullScreen() {
     <div className="p-0">
       <button
         onClick={() => setModalShow(true)}
-        className="p-2 mx-5 fullScreenHover  "
+        className="p-2 mx-5 navStyle "
         style={{
           background: "white",
           border: "none",

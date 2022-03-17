@@ -4,7 +4,7 @@ import { Button, Modal } from "react-bootstrap";
 function CardOneKnowMore(props) {
   console.log(props);
   return (
-    <div className="d-flex justify-content-end p-3">
+    <div className="d-flex justify-content-end p-3 mb-1">
       <Link
         to="/FullStack"
         onClick={() => {

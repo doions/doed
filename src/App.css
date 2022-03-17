@@ -27,8 +27,8 @@ button {
   background-color: #f5b4b1;
 }
 .navStyle:hover {
-  /* border-bottom: #e63732 1px solid; */
   text-decoration: underline;
+  text-underline-offset: 4px;
   text-decoration-color: #e63732;
 }
 .read-or-hide {
@@ -49,6 +49,7 @@ button {
 .fullScreenHover:hover {
   text-decoration: underline;
   text-decoration-color: #e63732;
+  text-underline-offset: 4px;
 }
 textarea {
   width: 300px;
@@ -62,3 +63,22 @@ a:-webkit-any-link {
 a:hover:-webkit-any-link {
   color: initial;
 }
+
+.modal-dialog {
+  transition-duration: 2s !important;
+}
+/* .modal {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  bottom: 0;
+  left: 0;
+  z-index: 10040;
+  overflow: auto;
+  overflow-y: auto;
+  ----------------------
+   position: absolute;
+  top: 0%;
+  left: 20%;
+  transform: translate(50%, 100%);
+} */

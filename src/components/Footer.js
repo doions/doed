@@ -4,7 +4,7 @@ import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 import { Container, Row, Col } from "react-bootstrap";
 function Footer() {
   return (
-    <Container className="ftr p-5 mt-5">
+    <Container fluid className="ftr p-5 mt-5">
       <Row>
         <Col>
           <h1>Contact Detail</h1>
@@ -19,7 +19,7 @@ function Footer() {
             482001
           </p>
         </Col>
-        <Col className="d-flex align-items-center  justify-content-evenly">
+        <Col className="d-flex align-items-center  justify-content-center">
           <a href="https://www.facebook.com/doionsengineering" target="_blank">
             <AiFillFacebook size={70} />
           </a>
