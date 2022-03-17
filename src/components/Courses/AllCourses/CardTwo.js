@@ -6,7 +6,7 @@ import CardTwoMH from "./AllCourseComponent/CardTwoMH";
 import CardTwoMsg from "./AllCourseComponent/CardTwoMsg";
 import CardTwoTime from "./AllCourseComponent/CardTwoTime";
 
-function CardTwo() {
+function CardTwo(props) {
   return (
     <div>
       <Container className="border border-Secondary p-0">
@@ -14,7 +14,7 @@ function CardTwo() {
         <CardTwoTime />
         <CardTwoMH />
         <CardTwoMsg />
-        <CardTwoKnowMore />
+        <CardTwoKnowMore {...props} />
       </Container>
     </div>
   );

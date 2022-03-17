@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import CardOne from "./CardOne";
 import CardTwo from "./CardTwo";
 
-function index() {
+function index(props) {
   return (
     <div>
       <Container>
@@ -12,10 +12,10 @@ function index() {
         </h1>
         <Row className="d-flex justify-content-around">
           <Col md={4}>
-            <CardOne />
+            <CardOne {...props} />
           </Col>
           <Col md={4}>
-            <CardTwo />
+            <CardTwo {...props} />
           </Col>
         </Row>
       </Container>

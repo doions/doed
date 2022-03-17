@@ -1,6 +1,6 @@
 import React from "react";
 import { Modal } from "react-bootstrap";
-import Courses from "../AllCourses/index";
+import Courses from "./AllCourse";
 import closeBtn from "../Image/closeBtn.png";
 
 function MyVerticallyCenteredModal(props) {
@@ -24,7 +24,7 @@ function MyVerticallyCenteredModal(props) {
           />
         </div>
 
-        <Courses />
+        <Courses {...props} />
       </Modal.Body>
     </Modal>
   );

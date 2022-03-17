@@ -6,7 +6,7 @@ import SecFour from "./DigitalMarketingComponent/SecFour";
 import SecFive from "./DigitalMarketingComponent/SecFive";
 import SecSix from "./DigitalMarketingComponent/SecSix";
 
-function index() {
+function DigitalMarketingCourse() {
   return (
     <div>
       <SecOne />
@@ -19,4 +19,4 @@ function index() {
   );
 }
 
-export default index;
+export default DigitalMarketingCourse;

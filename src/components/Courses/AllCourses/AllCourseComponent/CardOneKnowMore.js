@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-function CardOneKnowMore() {
+import { Button, Modal } from "react-bootstrap";
+function CardOneKnowMore(props) {
+  console.log(props);
   return (
     <div className="d-flex justify-content-end p-3">
-      <Link to="/FullStack">Know More</Link>
+      <Link
+        to="/FullStack"
+        onClick={() => {
+          props.onHide();
+        }}
+      >
+        Know More
+      </Link>
     </div>
   );
 }
