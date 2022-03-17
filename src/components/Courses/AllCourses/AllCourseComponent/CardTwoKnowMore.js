@@ -1,4 +1,5 @@
 import React from "react";
+import { TypeUnderline } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 function CardTwoKnowMore(props) {
   return (
@@ -8,6 +9,7 @@ function CardTwoKnowMore(props) {
         onClick={() => {
           props.onHide();
         }}
+        style={{ color: "red", textDecoration: "underline" }}
       >
         Know More
       </Link>

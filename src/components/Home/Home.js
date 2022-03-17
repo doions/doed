@@ -4,6 +4,7 @@ import SecFour from "./SecFour";
 import SecOne from "./SecOne";
 import SecThree from "./SecThree";
 import SecTwo from "./SecTwo";
+import ContactUs from "../ContactUS/ContactUs";
 
 function index() {
   return (
@@ -13,6 +14,7 @@ function index() {
       <SecThree />
       <SecFour />
       <SecFive />
+      <ContactUs />
     </div>
   );
 }

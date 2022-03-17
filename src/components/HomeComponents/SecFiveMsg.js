@@ -26,7 +26,7 @@ function SecFiveMsg() {
       <a href="/" className="text-danger fw-bold">
         Checkout our courses here
       </a>
-      <p className="pt-3">Apply for our courses here.</p>
+      {/* <p className="pt-3">Apply for our courses here.</p> */}
 
       {/* <CalltoAction /> */}
     </div>

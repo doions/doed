@@ -25,7 +25,7 @@ const ApplyFormBeginner = () => {
   return (
     <Container>
       <Row className=" d-flex justify-content-center">
-        <Col md={6}>
+        <Col md={10}>
           <Formik
             validationSchema={validationSchema}
             initialValues={{ name: "", phone: "", email: "" }}
@@ -70,7 +70,7 @@ const ApplyFormBeginner = () => {
                     name="StartThisCourse"
                     value="Within this week"
                   />
-                  Within this week
+                  &nbsp; Within this week
                 </label>
                 <br />
                 <label>
@@ -79,7 +79,7 @@ const ApplyFormBeginner = () => {
                     name="StartThisCourse"
                     value="Within this month"
                   />
-                  Within this month
+                  &nbsp; Within this month
                 </label>
                 <br />
                 <label>
@@ -88,12 +88,12 @@ const ApplyFormBeginner = () => {
                     name="StartThisCourse"
                     value=" Next month"
                   />
-                  Next month
+                  &nbsp; Next month
                 </label>
                 <br />
                 <label>
                   <Field type="radio" name="StartThisCourse" value="other" />
-                  other
+                  &nbsp; other
                 </label>
               </div>
 
@@ -102,12 +102,12 @@ const ApplyFormBeginner = () => {
                 <h4>Suitable time to contact you.</h4>
                 <label>
                   <Field type="radio" name="SuitableTime" value=" 09Am- 12pm" />
-                  09Am- 12pm
+                  &nbsp; 09Am- 12pm
                 </label>
                 <br />
                 <label>
                   <Field type="radio" name="SuitableTime" value="12Pm- 03pm" />
-                  12Pm- 03pm
+                  &nbsp; 12Pm- 03pm
                 </label>
                 <br />
                 <label>
@@ -116,7 +116,7 @@ const ApplyFormBeginner = () => {
                     name="SuitableTime"
                     value="   03Pm- 06pm"
                   />
-                  03Pm- 06pm
+                  &nbsp; 03Pm- 06pm
                 </label>
               </div>
 

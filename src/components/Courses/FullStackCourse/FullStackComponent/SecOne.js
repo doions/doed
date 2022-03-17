@@ -8,7 +8,7 @@ import KnowMore from "../../../Button/KnowMore";
 function SecOne() {
   return (
     <div>
-      <Container className="py-5">
+      <Container className="py-5 my-5">
         <Row>
           <Col sm={12} md={6} className="d-flex flex-column align-self-end">
             <SecOneMH />

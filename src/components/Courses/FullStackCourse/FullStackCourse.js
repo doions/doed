@@ -6,6 +6,7 @@ import SecFour from "./FullStackComponent/SecFour";
 import SecFive from "./FullStackComponent/SecFive";
 import SecSix from "./FullStackComponent/SecSix";
 import SecSeven from "./FullStackComponent/SecSeven";
+import ContactUs from "../../ContactUS/ContactUs";
 function index() {
   return (
     <div>
@@ -16,6 +17,7 @@ function index() {
       <SecFive />
       <SecSix />
       <SecSeven />
+      <ContactUs />
     </div>
   );
 }

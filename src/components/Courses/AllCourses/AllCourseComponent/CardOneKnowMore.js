@@ -10,6 +10,7 @@ function CardOneKnowMore(props) {
         onClick={() => {
           props.onHide();
         }}
+        style={{ color: "red", textDecoration: "underline" }}
       >
         Know More
       </Link>

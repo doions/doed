@@ -17,11 +17,11 @@ function ContactFrom() {
     <>
       <Container>
         <Form onSubmit={handleSubmit}>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="mb-5" controlId="formBasicEmail">
             <Form.Control name="email" type="email" placeholder="E-mail" />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="mb-5" controlId="formBasicEmail">
             <Form.Control
               as="textarea"
               name="message"

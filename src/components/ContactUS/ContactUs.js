@@ -13,7 +13,7 @@ function index() {
           </Col>
         </Row>
         <Row className="d-flex justify-content-center">
-          <Col md={6}>
+          <Col md={8}>
             <ContactFrom />
           </Col>
         </Row>

@@ -16,12 +16,16 @@ function Footer() {
           <h1>Address</h1>
           <p>
             1st Floor, Raina Tower, South Civil Lines, Jabalpur, Madhya Pradesh
-            482001{" "}
+            482001
           </p>
         </Col>
         <Col className="d-flex align-items-center  justify-content-evenly">
-          <AiFillFacebook size={70} />
-          <AiFillInstagram size={70} />
+          <a href="https://www.facebook.com/doionsengineering" target="_blank">
+            <AiFillFacebook size={70} />
+          </a>
+          <a href="https://www.instagram.com/doions_education/" target="_blank">
+            <AiFillInstagram size={70} />
+          </a>
         </Col>
       </Row>
     </Container>

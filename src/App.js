@@ -2,11 +2,10 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./Fonts/menlo-cufonfonts/Menlo-Regular.ttf";
-
-import Home from "./components/Home/index";
+import Home from "./components/Home/Home";
 import Header from "./components/Header";
 import NoPage from "./components/NoPage/index";
-import ContactUs from "./components/ContactUS/index";
+import ContactUs from "./components/ContactUS/ContactUs";
 import Footer from "./components/Footer";
 import Courses from "./components/Courses/AllCourses/CoursesFullScreen";
 import FullStack from "./components/Courses/FullStackCourse/FullStackCourse";
@@ -25,7 +24,7 @@ function App() {
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
-      <ContactUs />
+
       <Footer />
     </BrowserRouter>
   );
