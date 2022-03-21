@@ -52,7 +52,7 @@ button {
   text-underline-offset: 4px;
 }
 textarea {
-  width: 300px;
+  width: 100%;
   height: 150px;
 }
 

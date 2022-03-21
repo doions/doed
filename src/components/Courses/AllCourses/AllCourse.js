@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import CardOne from "./CardOne";
 import CardTwo from "./CardTwo";
 
-function index(props) {
+function AllCourse(props) {
   return (
     <div>
       <Container>
@@ -23,4 +23,4 @@ function index(props) {
   );
 }
 
-export default index;
+export default AllCourse;

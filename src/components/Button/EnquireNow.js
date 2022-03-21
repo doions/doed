@@ -10,13 +10,6 @@ function MyVerticallyCenteredModal(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      {/* <Modal.Header className="bg-danger d-flex justify-content-center">
-        <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
-        </Modal.Title>
-        <CloseButton variant="white" onClick={props.onHide} />
-      </Modal.Header> */}
-
       <Modal.Body className="p-0">
         <div className=" p-3" style={{ background: "#E63732" }}>
           <Container>
@@ -34,7 +27,7 @@ function MyVerticallyCenteredModal(props) {
           </Container>
         </div>
         <div className="p-3">
-          <EnquireForm />
+          <EnquireForm {...props} />
         </div>
       </Modal.Body>
       {/* <Modal.Footer>
@@ -44,7 +37,7 @@ function MyVerticallyCenteredModal(props) {
   );
 }
 
-function EnquiryNow() {
+function EnquiryNow(...props) {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
